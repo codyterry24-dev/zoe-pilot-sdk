@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "zoe-pilot-sdk"
+version = "0.1.0"
+description = "ZOE Pilot SDK — AI integrity verification client library for enterprise pilot programs"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.28",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock>=3.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/codyterry24-dev/zoe-pilot-sdk"
+Documentation = "https://github.com/codyterry24-dev/zoe-pilot-sdk/tree/main/docs"
+Issues = "https://github.com/codyterry24-dev/zoe-pilot-sdk/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["zoe_sdk*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
