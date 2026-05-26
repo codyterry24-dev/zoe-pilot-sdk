@@ -10,7 +10,7 @@
 
 ## What is ZOE?
 
-ZOE (Zero-trust Oversight Engine) is an AI integrity verification system built for enterprise teams operating high-risk AI in regulated environments. ZOE evaluates AI model behavior across 9 cognitive dimensions, producing auditable integrity scores aligned with EU AI Act Article 12 and NIST AI RMF requirements.
+ZOE is an AI integrity verification system built for enterprise teams operating high-risk AI in regulated environments. ZOE evaluates AI model behavior across 9 cognitive dimensions, producing auditable integrity scores aligned with EU AI Act Article 12 and NIST AI RMF requirements.
 
 **This SDK is the pilot client library.** It gives your team a local interface to submit evaluation jobs, retrieve integrity reports, and integrate ZOE scores into your existing compliance workflows.
 
