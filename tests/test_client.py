@@ -123,7 +123,8 @@ class TestAuthentication:
 # ---------------------------------------------------------------------------
 
 class TestClientInit:
-    def test_default_endpoint(self):
+    def test_default_endpoint(self, monkeypatch):
+        monkeypatch.delenv("ZOE_ENDPOINT", raising=False)
         c = ZOEClient(api_key=TEST_API_KEY)
         assert c.endpoint == "https://zoe.axtlabs.co/api/v1"
 
